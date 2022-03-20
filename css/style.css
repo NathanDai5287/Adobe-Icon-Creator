@@ -1,3 +1,13 @@
+@font-face {
+	font-family: 'Adobe Clean Bold';
+	src: url('../fonts/AdobeClean-Bold.otf');
+	font-weight: bold;
+}
+
+#preview-div * {
+	font-family: 'Adobe Clean Bold';
+}
+
 #preview {
 	width: 30vh;
 }
