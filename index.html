@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,27 +10,38 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css">
 
-	<!-- js -->
-	<script src="js/script.js"></script>
 
 	<title>Adobe Icon Creator</title>
 </head>
+
 <body>
 	<div id="container" class="d-flex">
 		<div class="p-2 inputs">
+			<!-- ████░████░██▄░▄██░████ -->
+			<!-- ░██░░██▄░░░▀███▀░░░██░ -->
+			<!-- ░██░░██▀░░░▄███▄░░░██░ -->
+			<!-- ░██░░████░██▀░▀██░░██░ -->
 			<div id="text-input" class="input-section">
 				<h1>Text</h1>
 				<input type="text" id="text" name="text" placeholder="edit me" maxlength="2" value="Tf" />
 			</div>
+			<!-- ░▄███▄░░▄███▄░░██░░░░▄███▄░░████▄ -->
+			<!-- ██▀░▀▀░██▀░▀██░██░░░██▀░▀██░██░██ -->
+			<!-- ██▄░▄▄░██▄░▄██░██░░░██▄░▄██░████▀ -->
+			<!-- ░▀███▀░░▀███▀░░████░░▀███▀░░██░██ -->
 			<div id="color-input" class="input-section">
 				<h1>Color</h1>
 
 				<label for="background-color">Background</label>
-				<input type="color" id="color" name="background-color" value="#00005b">
+				<input type="color" id="background-color" name="background-color" value="#00005b">
 				<br>
 				<label for="foreground-color">Foreground</label>
-				<input type="color" id="color" name="foreground-color" value="#00005b">
+				<input type="color" id="foreground-color" name="foreground-color" value="#9999ff">
 			</div>
+			<!-- ████▄░░▄███▄░░▄███▄░██░████░██░░▄███▄░░██▄░██ -->
+			<!-- ██░██░██▀░▀██░▀█▄▀▀░██░░██░░██░██▀░▀██░███▄██ -->
+			<!-- ████▀░██▄░▄██░▄▄▀█▄░██░░██░░██░██▄░▄██░██▀███ -->
+			<!-- ██░░░░░▀███▀░░▀███▀░██░░██░░██░░▀███▀░░██░░██ -->
 			<div class="input-section">
 				<h1>Position</h1>
 
@@ -39,7 +51,7 @@
 							<label for="x-position">Horizontal</label>
 						</div>
 						<div class="column">
-							<input type="range" id="position" name="x-position" min="-100" max="100" value="0" />
+							<input type="range" id="x-position" name="x-position" min="-20" max="20" step="0.01" value="0" />
 						</div>
 					</div>
 					<div class="row">
@@ -47,17 +59,52 @@
 							<label for="y-position" id="vertical-label">Vertical</label>
 						</div>
 						<div class="column">
-							<input type="range" id="position" name="y-position" min="-100" max="100" value="0" />
+							<input type="range" id="y-position" name="y-position" min="-20" max="20" step="0.01" value="0" />
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-
+		<!-- ████▄░████▄░████░██░░░██░██░████░██░░░░░░░██ -->
+		<!-- ██░██░██░██░██▄░░██▄░▄██░██░██▄░░██░░░▄░░░██ -->
+		<!-- ████▀░████▀░██▀░░░██▄██░░██░██▀░░███▄███▄███ -->
+		<!-- ██░░░░██░██░████░░░███░░░██░████░░▀███▀███▀░ -->
 		<div id="preview" class="ml-auto p-2 preview">
 			<h1>Preview</h1>
-			<svg id="preview-svg" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><defs><style>.cls-1{fill:#00005b;}.cls-2{font-size:91.332px;fill:#99f;font-family:AdobeClean-Bold, Adobe Clean;font-weight:700;letter-spacing:0.008em;}.cls-3{letter-spacing:0em;}</style></defs><rect class="cls-1" width="128" height="128" rx="16.323"/><text class="cls-2" transform="translate(21.671 95.052)">T<tspan class="cls-3" x="50.049" y="0">f</tspan></text></svg>
+			<svg id="preview-svg" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+				<defs>
+					<style>
+						.cls-1 {
+							fill: #00005b;
+						}
+
+						.cls-2 {
+							font-size: 91.332px;
+							fill: #99f;
+							font-family: AdobeClean-Bold, Adobe Clean;
+							font-weight: 700;
+							letter-spacing: 0.008em;
+						}
+
+						.cls-3 {
+							letter-spacing: 0em;
+						}
+
+					</style>
+				</defs>
+				<rect class="cls-1" id="icon-background" width="128" height="128" rx="16.323" />
+				<text class="cls-2" id="icon-text" transform="translate(21.671 95.052)">T
+					<tspan class="cls-3" x="50.049" y="0">f</tspan>
+				</text>
+			</svg>
 		</div>
 	</div>
+
+	<!-- js -->
+	<script src="js/script.js"></script>
 </body>
+
 </html>
+
+
+
