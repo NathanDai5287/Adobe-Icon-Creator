@@ -1,0 +1,27 @@
+#preview {
+	width: 30vh;
+}
+
+#container {
+	padding: 3rem !important;
+}
+
+.input-section label {
+	padding: 0.5rem;
+}
+
+.input-section input {
+	padding: 0.5rem;
+}
+
+.input-section {
+	margin: 0 0 2rem 0;
+}
+
+.preview {
+	padding: 2rem;
+}
+
+#vertical-label {
+	margin-right: 1.31rem;
+}
