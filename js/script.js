@@ -49,7 +49,6 @@ function setColor(background, foreground) {
 }
 
 function setPosition(dx, dy) {
-	console.log(dx, dy);
 	let x = 21.671 + Number(dx);
 	let y = 95.052 + Number(dy);
 
@@ -57,9 +56,36 @@ function setPosition(dx, dy) {
 	text.setAttribute('transform', 'translate(' + x + ',' + y + ')')
 }
 
+// ████░██▄░▄██░████▄░░▄███▄░░████▄░████
+// ██▄░░░▀███▀░░██░██░██▀░▀██░██░██░░██░
+// ██▀░░░▄███▄░░████▀░██▄░▄██░████▀░░██░
+// ████░██▀░▀██░██░░░░░▀███▀░░██░██░░██░
+
+function download(filename, text) {
+	var pom = document.createElement('a');
+	pom.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+	pom.setAttribute('download', filename);
+
+	if (document.createEvent) {
+		var event = document.createEvent('MouseEvents');
+		event.initEvent('click', true, true);
+		pom.dispatchEvent(event);
+	}
+	else {
+		pom.click();
+	}
+}
+
+function toFile() {
+	let content = document.getElementById('preview-div').innerHTML;
+	let text = getText();
+	download(text + '.svg', content);
+}
+
 // ██▄░▄██░░▄███▄░░██░██▄░██
 // ██▀█▀██░██▀░▀██░██░███▄██
 // ██░░░██░███████░██░██▀███
 // ██░░░██░██░░░██░██░██░░██
 
+document.getElementById('export-button').onclick = toFile;
 var main = setInterval(updatePreview, 10);
