@@ -43,7 +43,16 @@
 			<!-- ████▀░██▄░▄██░▄▄▀█▄░██░░██░░██░██▄░▄██░██▀███ -->
 			<!-- ██░░░░░▀███▀░░▀███▀░██░░██░░██░░▀███▀░░██░░██ -->
 			<div class="input-section">
-				<h1>Position</h1>
+				<div class="container heading">
+					<div class="row">
+						<div class="col-xs">
+							<h1>Position</h1>
+						</div>
+						<div class="col-xs">
+							<button id="reset-position" class="reset-button">Reset</button>
+						</div>
+					</div>
+				</div>
 
 				<div id="position-editor" class="container">
 					<div class="row">
@@ -60,6 +69,33 @@
 						</div>
 						<div class="column">
 							<input type="range" id="y-position" name="y-position" min="-20" max="20" step="0.01" value="0" />
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- ████░░▄███▄░░██▄░██░████░░░▄███▄░██░█████░████ -->
+			<!-- ██▄░░██▀░▀██░███▄██░░██░░░░▀█▄▀▀░██░░░▄█▀░██▄░ -->
+			<!-- ██▀░░██▄░▄██░██▀███░░██░░░░▄▄▀█▄░██░▄█▀░░░██▀░ -->
+			<!-- ██░░░░▀███▀░░██░░██░░██░░░░▀███▀░██░█████░████ -->
+			<div class="input-section">
+				<div class="container heading">
+					<div class="row">
+						<div class="col-xs">
+							<h1>Font Size</h1>
+						</div>
+						<div class="col-xs">
+							<button id="reset-fontsize" class="reset-button">Reset</button>
+						</div>
+					</div>
+				</div>
+
+				<div id="fontsize-editor" class="container">
+					<div class="row">
+						<div class="column">
+							<label for="fontsize">Font Size</label>
+						</div>
+						<div class="column">
+							<input type="range" id="font-size" name="fontsize" min="50" max="150" step="1" value="91.332" />
 						</div>
 					</div>
 				</div>
@@ -102,12 +138,17 @@
 
 			<div id="export">
 				<button id="export-button">Export</button>
+				<!-- <select name="filetype" id="filetype"> -->
+					<!-- <option value="svg">svg</option> -->
+					<!-- <option value="png">png</option> -->
+					<!-- <option value="pdf">pdf</option> -->
+				<!-- </select> -->
 			</div>
 		</div>
 	</div>
 
 	<!-- js -->
-	<script src="js/script.js"></script>
+	<script src="js/script.js" type="module"></script>
 </body>
 
 </html>

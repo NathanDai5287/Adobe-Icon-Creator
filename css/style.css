@@ -9,7 +9,7 @@
 }
 
 #preview {
-	width: 30vh;
+	width: min(30vh, 20vw);
 }
 
 #container {
