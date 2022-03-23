@@ -39,3 +39,28 @@
 button {
 	margin: 1rem;
 }
+
+.color-button {
+	width: 3em;
+	height: 3em;
+
+	/* rounded corners */
+	border-radius: 20%;
+}
+
+.color-input {
+	width: 3em;
+	height: 3em;
+	border: none;
+	border-radius: 20%;
+	outline: none;
+}
+
+.color-input::-webkit-color-swatch-wrapper {
+	padding: 0;
+}
+
+.color-input::-webkit-color-swatch {
+	border: none;
+	border-radius: 20%;
+}

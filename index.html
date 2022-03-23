@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css">
 
+	<script src="https://cdn.jsdelivr.net/npm/danfojs@1.0.2/lib/bundle.min.js"></script>
 
 	<title>Adobe Icon Creator</title>
 </head>
@@ -31,12 +32,17 @@
 			<!-- ░▀███▀░░▀███▀░░████░░▀███▀░░██░██ -->
 			<div id="color-input" class="input-section">
 				<h1>Color</h1>
+				<div class="d-flex flex-row" id="color-palettes">
+					<!-- <div class="p-2"><button class="color-button"></button></div> -->
+					<!-- <div class="p-2"><button class="color-button"></button></div> -->
+					<!-- <div class="p-2"><button class="color-button"></button></div> -->
+				</div>
 
 				<label for="background-color">Background</label>
-				<input type="color" id="background-color" name="background-color" value="#00005b">
+				<input type="color" id="background-color" class="color-input" name="background-color" value="#00005b">
 				<br>
 				<label for="foreground-color">Foreground</label>
-				<input type="color" id="foreground-color" name="foreground-color" value="#9999ff">
+				<input type="color" id="foreground-color" class="color-input" name="foreground-color" value="#9999ff">
 			</div>
 			<!-- ████▄░░▄███▄░░▄███▄░██░████░██░░▄███▄░░██▄░██ -->
 			<!-- ██░██░██▀░▀██░▀█▄▀▀░██░░██░░██░██▀░▀██░███▄██ -->
